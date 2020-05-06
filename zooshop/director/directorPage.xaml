@@ -1,0 +1,66 @@
+﻿<Page x:Class="zooshop.director.directorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:zooshop.director"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="directorPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="154*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="145*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.ColumnSpan="8" Grid.Row="3" Margin="0,0,0,19.6" Grid.RowSpan="2" FontSize="18"/>
+        <Button x:Name="addbutton" Content="добавить (+)"  FontSize="16" Grid.Row="5" Grid.RowSpan="1" FontFamily="SimSun-ExtB" Grid.ColumnSpan="1" Grid.Column="2" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFC0FD"/>
+                    <GradientStop Color="#FFCD68DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="editbutton" Content="редактировать"  FontSize="16" Grid.Row="5" Grid.Column="4" FontFamily="SimSun-ExtB" Grid.RowSpan="1" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFC0FD"/>
+                    <GradientStop Color="#FFCD68DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="deletebutton" Content="удалить (-)"  FontSize="16" Grid.Row="5" Grid.Column="6" FontFamily="SimSun-ExtB" Grid.RowSpan="1" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFC0FD"/>
+                    <GradientStop Color="#FFCD68DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="backbutton" Content="&lt;- назад"  FontSize="20" Grid.Row="1" Grid.RowSpan="1" FontFamily="SimSun-ExtB" Grid.Column="1" Grid.ColumnSpan="1" Click="backbutton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFC0FD"/>
+                    <GradientStop Color="#FFCD68DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
